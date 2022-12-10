@@ -22,7 +22,5 @@ jobs:
       - name: Compile
         run: |
           ls -lR
-          git clone --depth 1 https://github.com/ps2homebrew/Open-PS2-Loader
-          cd Open-PS2-Loader
           make --trace languages
           sh ./lng_pack.sh
